@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Criar conta</title>
+    <style>
+        body {
+            background-color: rgb(211, 211, 211);
+        }
+        
+        form {
+            padding: 10px;
+            line-height: 10px
+        }
+        
+        main {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background: black;
+        }
+        
+        .imgcontainer {
+            text-align: center;
+            /*border-radius: 500%;*/
+            margin: 20px 12px;
+        }
+        
+        p {
+            font-family:'poppins';
+            color: black;
+            border-bottom: 1.50px solid black;
+            font-family: sans-serif;
+            color: bla;
+        }
+        
+        button {
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+            width: 100px;
+            height: 25px;
+        }
+        
+        button:hover {
+            opacity: 0.52;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <p style="color:rgb(105, 105, 105); 
+font-size:49.9px;  
+font-weight:bold;
+text-align:center;">
+        Crie sua conta!
+
+    </p>
+
+    <div class="imgcontainer">
+        <img src="regis.jpeg" width="170px">
+        <img </div>
+
+
+        <form align="center">
+
+            <pre><b><p font-size:300%; font-family: Open Sans;>Data de Nascimento:  <select>
+  <option value="Day">Dia</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+</select>  <select>
+  <option value="Month">Mês</option>
+  <option value="January">Janeiro</option>
+  <option value="February">Fevereiro</option>
+  <option value="March">Março</option>
+  <option value="April">Abril</option>
+  <option value="May">Maio</option>
+  <option value="June">Junho</option>
+  <option value="July">Julho</option>
+  <option value="August">Agosto</option>
+  <option value="September">Setembro</option>
+  <option value="November">Outubro</option>
+  <option value="December">Novembro</option>
+  <option value="December">Dezembro</option>
+</select>    <select>
+  <option value="Year">Ano</option>
+  <option value="2001">1985</option>
+  <option value="2002">1986</option>
+  <option value="2003">1987</option>
+  <option value="2004">1988</option>
+  <option value="2005">1989</option>
+  <option value="2006">1990</option>
+  <option value="2007">1991</option>
+  <option value="2008">1992</option>
+  <option value="2009">1993</option>
+  <option value="2010">1994</option>
+  <option value="2011">1995</option>
+  <option value="2012">1996</option>
+  <option value="2013">1997</option>
+  <option value="2014">1998</option>
+  <option value="2015">1999</option>
+  <option value="2016">2000</option>
+  <option value="2017">2001</option>
+  <option value="2018">2002</option>
+  <option value="2019">2003</option>
+</select>
+<br>
+*Nome: <input type="text" name="Name" value="" placeholder="Seu nome aqui"required><br>
+*Sobrenome: <input type="text" name="LastName" value=""placeholder="Seu sobrenome aqui" required><br>
+*Nome de Usuário: <input type="text" id="usrname" name="usrname"placeholder="Nome de Usuário" required><br>
+*Senha: <input type="password" name="psw" placeholder="Digite uma senha" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve conter pelo menos um número e letras maiúsculas e minúculas, mínimo de 8 caracteres" required><br>
+<input type="submit" value="Enviar" >  
+<label>
+  <input type="checkbox" checked="checked" name="remember"> Lembrar os meus dados
+</label>
+<label style="color:red">* Preenchimento obrigatório</label>
+</b>
+</style>
+</p>
+</pre>
+            <button type="button " class="cancelbtn " style="color:White">Cancelar</button><br>
+
+          <hr>
+            <span><a href="https://github.com/AndreLefon">Feito por André Martins</a></span>
+    </div>
+    </form>
+
+    <div id="cursor" class="cursor--moved cursor--hidden" style="top: 231px; left: 1036px;"></div>
+
+    <script>
+        var myInput = document.getElementById("Password");
+        var letter = document.getElementById("letter");
+        var capital = document.getElementById("capital");
+        var number = document.getElementById("number");
+        var length = document.getElementById("length");
+
+        function
+        validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Preencha seu nome");
+                return false;
+            }
+        }
+        myInput.onfocus = function() {
+            document.getElementById("message").style.display = "block";
+        }
+        myInput.onblur = function() {
+            document.getElementById("message").style.display = "none";
+        }
+        myInput.onkeyup = function() {
+            var lowerCaseLetters = /[a-z]/g;
+            if (myInput.value.match(lowerCaseLetters)) {
+                letter.classList.remove("invalid");
+                letter.classList.add("valid");
+            } else {
+                letter.classList.remove("valid");
+                letter.classList.add("invalid");
+            }
+            var upperCaseLetters = /[A-Z]/g;
+            if (myInput.value.match(upperCaseLetters)) {
+                capital.classList.remove("invalid");
+                capital.classList.add("valid");
+            } else {
+                capital.classList.remove("valid");
+                capital.classList.add("invalid");
+            }
+            var numbers = /[0-9]/g;
+            if (myInput.value.match(numbers)) {
+                number.classList.remove("invalid");
+                number.classList.add("valid");
+            } else {
+                number.classList.remove("valid");
+                number.classList.add("invalid");
+            }
+            if (myInput.value.length >=
+                8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+            } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html
